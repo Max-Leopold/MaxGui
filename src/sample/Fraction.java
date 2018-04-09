@@ -4,7 +4,7 @@ package sample;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.Random;
-
+//Penis
 public class Fraction {
 
     Random r = new Random();
