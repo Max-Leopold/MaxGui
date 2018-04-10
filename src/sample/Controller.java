@@ -2,6 +2,7 @@ package sample;
 
 /**
  * Controller Klasse
+ * Alle Logik des Programms ist in dieser Klasse
  */
 
 import javafx.event.ActionEvent;
@@ -85,10 +86,10 @@ public class Controller{
 
     //Instanzvariablen:
 
-    Player playerOne = new Player(3,4, "Player One"); //Spieler 1
-    Player playerTwo = new Player(4,3, "Player Two"); //Spieler 2
+    private Player playerOne = new Player(3,4, "Player One"); //Spieler 1
+    private Player playerTwo = new Player(4,3, "Player Two"); //Spieler 2
 
-    int turn = 0;
+    private int turn = 0;
 
     //Arrays für Fractions und Brüche
     private Fraction[][] board = new Fraction[8][8];
@@ -189,13 +190,14 @@ public class Controller{
     /**
      * "Print" Methode für das Spielbrett
      */
-    public void setBoard(){
+    private void setBoard(){
 
         //Komplettes leerräumen des GridPane
         boardLayout.getChildren().clear();
 
         testForWin();
 
+        //Updaten des button Arrays ("buttons") bzw. des Fraction Arrays ("board")
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
 
@@ -271,7 +273,7 @@ public class Controller{
     /**
      * Methode zum Heraussuchen des Bruchs mit dem höchsten Wert
      */
-    public void getHighestFraction(){
+    private void getHighestFraction(){
 
         high = 0;
 
@@ -288,15 +290,19 @@ public class Controller{
         }
     }
 
-    public void testForWin(){
+
+    /**
+     * Testet ob ein Spieler gewonne hat
+     */
+    private void testForWin(){
 
         if(playerOne.points > 10){
             infoLabel.setText("Player One wins!");
-            finished = true;
+            finished = true; //Abbruchvariable
         }
         else if(playerTwo.points > 10){
             infoLabel.setText("Player Two wins!");
-            finished = true;
+            finished = true; //Abbruchvariable
         }
 
 
