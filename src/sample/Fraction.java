@@ -16,6 +16,11 @@ public class Fraction {
         nenner = r.nextInt(99 - 1) + 1;
         zaehler = r.nextInt(99 - 1) + 1;
 
+        while((double) nenner / (double) zaehler > 10 || (double) nenner / (double) zaehler < 1){
+            nenner = r.nextInt(99 - 1) + 1;
+            zaehler = r.nextInt(99 - 1) + 1;
+        }
+
     }
 
     public double getValue(){
