@@ -1,2 +1,2 @@
 # MaxGui
-Max Spiel von IProg als Gui Projekt.
+Max Spiel von IProg als Gui Projekt
