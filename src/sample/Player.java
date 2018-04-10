@@ -22,7 +22,7 @@ public class Player{
     /**
      * Bewegt die y Position des Spielers, wenn möglich (Spielfeldrand erreicht oder anderer Spieler
      * im Weg) um eine Stelle nach oben -> y - 1
-     * @param otherPlayer
+     * @param otherPlayer -> Player Objekt mit dem verglichen werden soll
      * @return boolean -> gibt an ob der Spieler bewegt wurde oder ob die Bewegung nicht möglich
      * ist, da der andere Spieler im Weg steht bzw. der Spielfeldrand erreicht wurde
      */
@@ -40,7 +40,7 @@ public class Player{
     /**
      * Bewegt die y Position des Spielers, wenn möglich (Spielfeldrand erreicht oder anderer Spieler
      * im Weg) um eine Stelle nach unten -> y + 1
-     * @param otherPlayer
+     * @param otherPlayer -> Player Objekt mit dem verglichen werden soll
      * @return boolean -> gibt an ob der Spieler bewegt wurde oder ob die Bewegung nicht möglich
      * ist, da der andere Spieler im Weg steht bzw. der Spielfeldrand erreicht wurde
      */
@@ -58,7 +58,7 @@ public class Player{
     /**
      * Bewegt die x Position des Spielers, wenn möglich (Spielfeldrand erreicht oder anderer Spieler
      * im Weg) um eine Stelle nach rechts -> x + 1
-     * @param otherPlayer
+     * @param otherPlayer -> Player Objekt mit dem verglichen werden soll
      * @return boolean -> gibt an ob der Spieler bewegt wurde oder ob die Bewegung nicht möglich
      * ist, da der andere Spieler im Weg steht bzw. der Spielfeldrand erreicht wurde
      */
@@ -77,7 +77,7 @@ public class Player{
     /**
      * Bewegt die x Position des Spielers, wenn möglich (Spielfeldrand erreicht oder anderer Spieler
      * im Weg) um eine Stelle nach links -> x - 1
-     * @param otherPlayer
+     * @param otherPlayer -> Player Objekt mit dem verglichen werden soll
      * @return boolean -> gibt an ob der Spieler bewegt wurde oder ob die Bewegung nicht möglich
      * ist, da der andere Spieler im Weg steht bzw. der Spielfeldrand erreicht wurde
      */

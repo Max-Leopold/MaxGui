@@ -2,6 +2,7 @@ package sample;
 
 /**
  * Fraction Klasse, die den nenner und den zähler eines Bruchs speichert
+ * @version 1.0
  */
 
 

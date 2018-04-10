@@ -3,6 +3,7 @@ package sample;
 /**
  * Controller Klasse
  * Alle Logik des Programms ist in dieser Klasse
+ * @version 1.2
  */
 
 import javafx.event.ActionEvent;
