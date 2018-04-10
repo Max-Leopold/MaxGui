@@ -1,5 +1,9 @@
 package sample;
 
+/**
+ * Controller Klasse
+ */
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -141,9 +145,10 @@ public class Controller{
         if (!finished) {
             KeyCode keyCode = keyEvent.getCode();
 
+            //Abfrage ob bzw. welche Pfeiltaste gedrückt wurde
             switch (keyCode.toString()) {
                 case "UP":
-                    succesful = tmp.moveUp(otherPlayer); //Pfeiltaste hoch, ...
+                    succesful = tmp.moveUp(otherPlayer);//Pfeiltaste hoch, ...
                     turn++;
                     break;
                 case "DOWN":
@@ -169,17 +174,10 @@ public class Controller{
                 infoLabel.setText("");
             }
 
-            if(tmp.points >= 10){
-                finished = true;
-            }
-
             setBoard();
             System.out.println(turn);
             System.out.println(tmp.points);
 
-            if(finished){
-                infoLabel.setText("" + tmp.name + " wins!");
-            }
 
         }
 
@@ -196,6 +194,7 @@ public class Controller{
         //Komplettes leerräumen des GridPane
         boardLayout.getChildren().clear();
 
+        testForWin();
 
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
@@ -206,6 +205,7 @@ public class Controller{
                     buttons[i][j].setStyle("-fx-background-color: goldenrod");
                     playerOne.points = playerOne.points + board[i][j].getValue();
                     pointsPlayerOne.setText("Points: " + Fraction.round(playerOne.points, 4)); //Schreiben der Punkte anzahl in das entsprechende Labeö
+                    testForWin();
                     board[i][j].nullFrac(); //Zähler und Nenner an der Stelle des Spielers gleih null setzen
                     getHighestFraction();
                 }
@@ -214,6 +214,7 @@ public class Controller{
                     buttons[i][j].setStyle("-fx-background-color: cadetblue");
                     playerTwo.points = playerTwo.points + board[i][j].getValue();
                     pointsPlayerTwo.setText("Points: " + Fraction.round(playerTwo.points, 4));
+                    testForWin();
                     board[i][j].nullFrac();
                     getHighestFraction();
                 }
@@ -285,5 +286,19 @@ public class Controller{
 
             }
         }
+    }
+
+    public void testForWin(){
+
+        if(playerOne.points > 10){
+            infoLabel.setText("Player One wins!");
+            finished = true;
+        }
+        else if(playerTwo.points > 10){
+            infoLabel.setText("Player Two wins!");
+            finished = true;
+        }
+
+
     }
 }
