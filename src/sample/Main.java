@@ -3,7 +3,7 @@ package sample;
 /**
  * Main Klasse des Programms
  * Übernimmt initialisierung der ersten Stage
- * @version 1.0
+ * @version 1.0 l
  */
 
 import javafx.application.Application;
