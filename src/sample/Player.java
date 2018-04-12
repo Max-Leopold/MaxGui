@@ -11,7 +11,7 @@ public class Player{
     int xPos;
     int yPos;
     double points = 0.0;
-    public String name;
+    private String name;
 
     public Player(int xPos, int yPos, String name){
         this.xPos = xPos; //Startpunkt x Koordinate...
