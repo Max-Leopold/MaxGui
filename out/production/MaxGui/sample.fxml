@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<FlowPane fx:id="flowPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#moveKeyPressed" prefHeight="600.0" prefWidth="789.0" style="-fx-background-color: #303030#303030;" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<FlowPane fx:id="flowPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#moveKeyPressed" prefHeight="600.0" prefWidth="789.0" style="-fx-background-color: #303030#303030;" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
    <children>
       <SplitPane dividerPositions="0.9080267558528428" orientation="VERTICAL" prefHeight="600.0" prefWidth="550.0">
         <items>

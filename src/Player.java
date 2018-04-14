@@ -1,4 +1,3 @@
-package sample;
 
 /**
  * Die Player Klasse, die die x und y Position eines Spielers speichert,

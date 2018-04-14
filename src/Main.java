@@ -1,4 +1,4 @@
-package sample;
+
 
 /**
  * Main Klasse des Programms

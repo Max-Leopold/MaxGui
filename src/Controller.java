@@ -1,4 +1,3 @@
-package sample;
 
 /**
  * Controller Klasse
