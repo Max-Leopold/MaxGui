@@ -1,3 +1,4 @@
+import java.io.Serializable;
 
 /**
  * Die Player Klasse, die die x und y Position eines Spielers speichert,
@@ -5,7 +6,7 @@
  * @version 1.0
  */
 
-public class Player{
+public class Player implements Serializable {
 
     int xPos;
     int yPos;

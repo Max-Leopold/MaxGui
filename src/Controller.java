@@ -6,6 +6,7 @@
  */
 
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -20,10 +21,10 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-import java.io.IOException;
+import java.io.*;
 
 
-public class Controller{
+public class Controller implements Serializable {
 
     //FXML:
 
@@ -51,6 +52,10 @@ public class Controller{
 
     @FXML
     FlowPane flowPane;
+
+    @FXML
+    Button saveGame;
+
 
     @FXML
     public void initialize(){
@@ -82,6 +87,9 @@ public class Controller{
         getHighestFraction();
         setBoard();
 
+
+
+
     }
 
     //Instanzvariablen:
@@ -102,6 +110,8 @@ public class Controller{
 
     //Abbruchvariable des Spiels
     private boolean finished = false;
+
+    int savegames = 1;
 
     /**
      * Methode die beim drücken des "new Game" Buttons aufgerufen wird
@@ -306,5 +316,51 @@ public class Controller{
         }
 
 
+    }
+
+
+    public void saveGame(ActionEvent actionEvent) {
+
+        try{
+
+            FileOutputStream fos = new FileOutputStream("savegame1.max" );
+            ObjectOutputStream oos = new ObjectOutputStream(fos);
+
+            oos.writeObject(board);
+            oos.writeObject(playerOne);
+            oos.writeObject(playerTwo);
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void loadGame(ActionEvent actionEvent) {
+
+        try {
+            FileInputStream fis = new FileInputStream("savegame1.max");
+            ObjectInputStream ois = new ObjectInputStream(fis);
+
+            Fraction[][] board = (Fraction[][]) ois.readObject();
+            Player playerOne = (Player) ois.readObject();
+            Player playerTwo = (Player) ois.readObject();
+
+            this.board = board;
+            this.playerOne = playerOne;
+            this.playerTwo = playerTwo;
+
+            getHighestFraction();
+            setBoard();
+
+        }
+        catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+
+        }
     }
 }

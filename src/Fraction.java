@@ -6,11 +6,12 @@
  */
 
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.Random;
 
-public class Fraction {
+public class Fraction implements Serializable {
 
     private Random r = new Random();
 

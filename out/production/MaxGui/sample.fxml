@@ -61,7 +61,7 @@
          <children>
             <Label text="Info:" textFill="#f24545">
                <VBox.margin>
-                  <Insets left="10.0" />
+                  <Insets left="10.0" top="10.0" />
                </VBox.margin></Label>
             <Label fx:id="infoLabel" textFill="WHITE">
                <VBox.margin>
@@ -88,6 +88,16 @@
                <VBox.margin>
                   <Insets left="10.0" />
                </VBox.margin></Label>
+            <Button fx:id="saveGame" mnemonicParsing="false" onAction="#saveGame" text="Save Game">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="loadGame" mnemonicParsing="false" onAction="#loadGame" text="Load Game">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
          </children>
       </VBox>
    </children>
