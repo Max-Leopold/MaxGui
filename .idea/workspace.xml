@@ -3,16 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MaxGui/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaxGui/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MaxGui/Fraction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaxGui/Fraction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MaxGui/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaxGui/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MaxGui/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaxGui/Player.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MaxGui/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaxGui/sample.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,8 +77,8 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="353" column="33" selection-start-line="353" selection-start-column="33" selection-end-line="353" selection-end-column="33" />
+            <state relative-caret-position="95">
+              <caret line="365" column="31" lean-forward="true" selection-start-line="365" selection-start-column="31" selection-end-line="365" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -103,7 +95,7 @@
       <file leaf-file-name="sample.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
+            <state relative-caret-position="445">
               <caret line="95" column="75" selection-start-line="95" selection-start-column="75" selection-end-line="95" selection-end-column="75" />
             </state>
           </provider>
@@ -392,7 +384,7 @@
       <workItem from="1523439802267" duration="579000" />
       <workItem from="1523513490613" duration="2458000" />
       <workItem from="1523703095003" duration="319000" />
-      <workItem from="1524117955043" duration="2413000" />
+      <workItem from="1524117955043" duration="4172000" />
     </task>
     <task id="LOCAL-00001" summary="Penis Kommentar">
       <created>1523289811027</created>
@@ -485,11 +477,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523526742933</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Spiel kann nun gespeichert und geladen werden">
+      <created>1524128820492</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1524128820492</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48713000" />
+    <option name="totallyTimeSpent" value="50472000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -599,7 +598,8 @@
     <MESSAGE value="Vervollständigen der Kommentare" />
     <MESSAGE value="Vollständige Dokumentation" />
     <MESSAGE value="I Weg" />
-    <option name="LAST_COMMIT_MESSAGE" value="I Weg" />
+    <MESSAGE value="Spiel kann nun gespeichert und geladen werden" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spiel kann nun gespeichert und geladen werden" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -692,35 +692,10 @@
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/Player.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="17">
-            <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="95" column="75" selection-start-line="95" selection-start-column="75" selection-end-line="95" selection-end-column="75" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -737,6 +712,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="95" column="75" selection-start-line="95" selection-start-column="75" selection-end-line="95" selection-end-column="75" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -749,10 +739,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="17">
+            <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="353" column="33" selection-start-line="353" selection-start-column="33" selection-end-line="353" selection-end-column="33" />
+        <state relative-caret-position="95">
+          <caret line="365" column="31" lean-forward="true" selection-start-line="365" selection-start-column="31" selection-end-line="365" selection-end-column="31" />
         </state>
       </provider>
     </entry>

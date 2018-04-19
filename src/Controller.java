@@ -19,6 +19,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import java.io.*;
@@ -323,7 +324,15 @@ public class Controller implements Serializable {
 
         try{
 
-            FileOutputStream fos = new FileOutputStream("savegame1.max" );
+            Stage stage = new Stage();
+
+            FileChooser fileChooser1 = new FileChooser();
+            fileChooser1.setTitle("Save Game");
+            File file = fileChooser1.showSaveDialog(stage);
+            System.out.println(file);
+
+
+            FileOutputStream fos = new FileOutputStream(file);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
 
             oos.writeObject(board);
@@ -340,7 +349,14 @@ public class Controller implements Serializable {
     public void loadGame(ActionEvent actionEvent) {
 
         try {
-            FileInputStream fis = new FileInputStream("savegame1.max");
+
+            Stage stage = new Stage();
+
+            FileChooser fileChooser = new FileChooser();
+            fileChooser.setTitle("Load Gaem");
+            File file = fileChooser.showOpenDialog(stage);
+
+            FileInputStream fis = new FileInputStream(file);
             ObjectInputStream ois = new ObjectInputStream(fis);
 
             Fraction[][] board = (Fraction[][]) ois.readObject();
